@@ -1,0 +1,71 @@
+interface Flyable {
+  void fly();
+}
+
+interface Quackable {
+  void quack();
+}
+
+interface Swimable {
+  void swim();
+}
+
+class RubberDuck implements Swimable, Quackable {
+  public void swim() {
+    System.out.println("Rubber Duck is swimming");
+  }
+  public void quack() {
+    System.out.println("Rubber Duck squeaks");
+  }
+}
+
+class WoodenDuck implements Swimable {
+  public void swim() {
+    System.out.println("Wooden Duck is swimming");
+  }
+}
+
+class RedHeadDuck implements Swimable, Flyable, Quackable {
+  public void swim() {
+    System.out.println("RedHead Duck is swimming");
+  }
+  public void fly() {
+    System.out.println("RedHead Duck is flying");
+  }
+  public void quack() {
+    System.out.println("RedHead Duck quacks");
+  }
+}
+
+class LakeDuck implements Swimable, Flyable, Quackable {
+  public void swim() {
+    System.out.println("Lake Duck is swimming");
+  }
+  public void fly() {
+    System.out.println("Lake Duck is flying");
+  }
+  public void quack() {
+    System.out.println("Lake Duck quacks");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    RubberDuck rd = new RubberDuck();
+    rd.swim();
+    rd.quack();
+
+    WoodenDuck wd = new WoodenDuck();
+    wd.swim();
+
+    RedHeadDuck rhd = new RedHeadDuck();
+    rhd.swim();
+    rhd.fly();
+    rhd.quack();
+
+    LakeDuck ld = new LakeDuck();
+    ld.swim();
+    ld.fly();
+    ld.quack();
+  }
+}

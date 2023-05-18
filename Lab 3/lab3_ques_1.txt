@@ -1,0 +1,68 @@
+abstract class Bharatvanshi {
+    public abstract void fight();
+    public abstract void obey();
+    public abstract void kind();
+}
+class Pandav extends Bharatvanshi {
+    public void fight() {
+        System.out.println("Pandavs are skilled fighters.");
+    }
+    public void obey() {
+        System.out.println("Pandavs are obedient.");
+    }
+    public void kind() {
+        System.out.println("Pandavs are kind.");
+    }
+}
+class Bheem extends Pandav {
+    public void kind() {
+        System.out.println("Bheem is less kind than Arjun but equally obedient.");
+    }
+}
+class Kaurav extends Bharatvanshi {
+    public void fight() {
+        System.out.println("Kauravs are skilled fighters.");
+    }
+    public void obey() {
+        System.out.println("Kauravs are notorious for disobeying.");
+    }
+    public void kind() {
+        System.out.println("Kauravs are notorious for their cruelty.");
+    }
+}
+class Vikarn extends Kaurav {
+    public void obey() {
+        System.out.println("Vikarn is a noble man, good fighter and obedient.");
+    }
+    public void kind() {
+        System.out.println("Vikarn is kind.");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Pandav arjun = new Pandav();
+        Bheem bheem = new Bheem();
+        Kaurav duryodhan = new Kaurav();
+        Vikarn vikarn = new Vikarn();
+
+        System.out.println("Arjun:");
+        arjun.fight();
+        arjun.obey();
+        arjun.kind();
+
+        System.out.println("Bheem: ");
+        bheem.fight();
+        bheem.obey();
+        bheem.kind();
+
+        System.out.println("Duryodhan :");
+        duryodhan.fight();
+        duryodhan.obey();
+        duryodhan.kind();
+
+        System.out.println("Vikarn :");
+        vikarn.fight();;
+        vikarn.obey();
+        vikarn.kind();
+    }
+}

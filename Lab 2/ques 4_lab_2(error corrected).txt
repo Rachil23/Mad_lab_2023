@@ -1,0 +1,35 @@
+class One {
+    int x;
+    One(int x) {
+        this.x = x;
+    }
+}
+
+class Two extends One {
+  
+}
+
+class Application {
+    public static void main(String args[]) {
+        One one = new One(10);
+        System.out.println("One's x value: " + one.x);
+
+        Two two = new Two(20); 
+        System.out.println("Two's x value: " + two.x);
+    }
+}
+In this example, the class One has a parameterized constructor One(int x) that initializes the value of the int variable x. 
+The class Two extends from class One, but it doesn't have any constructors. When you try to create an object of class Two, 
+the compiler throws an error because Two class doesn't have a constructor, and there is no default constructor in class One.
+we need to define a constructor in class Two that calls the constructor of class One using the super keyword.
+
+
+class Two extends One {
+    Two(int x){
+      super(x);
+    }
+}
+Now class Two can create object with the given parameter.
+
+Two two = new Two(20); 
+System.out.println("Two's x value: " + two.x);

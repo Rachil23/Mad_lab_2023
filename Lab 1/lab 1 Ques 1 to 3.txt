@@ -1,0 +1,74 @@
+ques 1
+
+/*class Main {
+    public static void main ( String args[ ]){
+        System.out.println( "Hello World" );
+    }
+}
+*/
+
+
+ques 3 
+/*
+class Main {
+    public static void main ( String args[ ]){
+        int num = Integer.parseInt(args[0]);
+        for(int i=0; i <= 10 ; i++){
+        System.out.print(num);
+        System.out.print("x");
+        System.out.print(i);
+        System.out.print("=");
+        System.out.print(num*i);
+        System.out.println();
+        }
+    }
+}
+*/
+
+
+ques 2 i)
+/*
+class Main {
+    public static void main ( String args[ ]){
+        int num = Integer.parseInt(args[0]);
+        for(int i=0; i<=3; i++)
+        {
+            for(int j=3 ; j>i; j--)
+            {
+                System.out.print(" ");
+                
+            }
+                for(int k =0; k <=i ; k++)
+                {
+                   System.out.print("*"); 
+                   System.out.print(" "); 
+                }
+                 System.out.println("");
+        
+            
+        }
+    }
+}
+*/
+
+
+ques 2 ii)
+class Main {
+    public static void main ( String args[ ]){
+        int num = Integer.parseInt(args[0]);
+        for(int i=0; i<=3; i++)
+        {
+            for(int j=0 ; j<i; j++)
+            {
+            
+                System.out.print(" ");
+            }
+                for(int k =i; k <=3 ; k++)
+                {
+                   System.out.print("*");
+                   System.out.print(" "); 
+                }
+                 System.out.println("");
+        }
+    }
+}

@@ -1,0 +1,16 @@
+class One {
+    int x;
+    One(int x) {
+        this.x = x;
+    }
+}
+class Two extends One {    
+}
+class Application {
+    public static void main(String args[]) {
+        One one = new One(10);
+        System.out.println("One's x value: " + one.x);
+        Two two = new Two(20); // Error: Two(int) in Two cannot be applied to ()
+        System.out.println("Two's x value: " + two.x);
+    }
+}
